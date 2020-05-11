@@ -1,0 +1,67 @@
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+h2{
+    font-weight: 400;
+}
+
+p{
+    font-weight: 300;
+}
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+/* alinea el texto hacía el centro*/
+.text-center{
+    text-align: center;
+}
+
+.precio{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+/* Ubica en una sola fila y toma solo el espacio necesario para desplegar su contenido*/
+.flex{
+    display: flex;
+    /* hace que los elementos usen el width:25%(ancho) disponible*/
+    flex-wrap: wrap;
+}
+
+.columna{
+    background: rgb(5, 115, 158);
+    color: rgb(255, 255, 255);
+    border: 1px solid #333;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 7px;
+    /* añade un efecto de sombra alrededor del marco*/
+    box-shadow: 10px 10px 5px rgb(92, 91, 91);
+    width: 25%;
+    /* hace que se tome en cuenta el valor que se especifique de borde o de relleno para el ancho o alto*/
+    box-sizing: border-box;
+}
+
+.btn-contrato{
+    background: rgb(179, 7, 113);
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+/* Estilo qe oscurece el botón cuando pasas el mouse sobre él*/
+.btn-contrato:hover{
+    background: rgb(119, 2, 74);
+}
+/* media query que modifica la página en función del tipo de dispositivo, estilo responsivo*/
+@media (max-width: 932px){
+    /* en este caso antes de los 932px el porcentaje del ancho de las columnas tendrán un 100% */
+    .columna{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
