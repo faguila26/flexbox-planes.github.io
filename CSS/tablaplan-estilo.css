@@ -1,7 +1,61 @@
-body{
-    font-family: 'Roboto Slab', serif;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    font-family: 'Roboto Slab', serif;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navigation Incio */
+.nav-main {
+    background: black;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+.nav-img {
+    width: 75px;
+    height: 70px;
+}
+/* Navbar Left */
+.nav-main ul {
+    display: flex;
+} 
+.nav-main ul li {
+    padding: 10px;
+}
+.nav-main ul li a {
+    padding: 2px;
+}
+.nav-main ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+hr {
+    margin: 10px 0;
+}
+/* Navigation Final */
+
+
+
+
+/* CARDS INICIO*/
 h2{
     font-weight: 400;
 }
@@ -65,3 +119,4 @@ p{
         margin-bottom: 20px;
     }
 }
+/* CARDS FIN*/
