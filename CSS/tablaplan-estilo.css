@@ -25,6 +25,7 @@ ul {
     align-items: center;
     height: 60px;
     padding: 20px 0;
+    margin-bottom: 30px;
 }
 .nav-img {
     width: 75px;
@@ -41,29 +42,21 @@ ul {
     padding: 2px;
 }
 .nav-main ul li a:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid white;
 }
 .nav-main ul.nav-menu {
     flex: 1;
     margin-left: 20px;
 }
-hr {
-    margin: 10px 0;
-}
 /* Navigation Final */
-
-
-
 
 /* CARDS INICIO*/
 h2{
     font-weight: 400;
 }
-
 p{
     font-weight: 300;
 }
-
 .container{
     margin: 0 auto;
     width: 90%;
@@ -72,9 +65,8 @@ p{
 .text-center{
     text-align: center;
 }
-
 .precio{
-    font-size: 50px;
+    font-size: 35px;
     color: rgb(0, 0, 0);
 }
 /* Ubica en una sola fila y toma solo el espacio necesario para desplegar su contenido*/
@@ -93,7 +85,7 @@ p{
     border-radius: 7px;
     /* añade un efecto de sombra alrededor del marco*/
     box-shadow: 10px 10px 5px rgb(92, 91, 91);
-    width: 25%;
+    width: 20%;
     /* hace que se tome en cuenta el valor que se especifique de borde o de relleno para el ancho o alto*/
     box-sizing: border-box;
 }
@@ -120,3 +112,26 @@ p{
     }
 }
 /* CARDS FIN*/
+
+/* FOOTER INICIO */
+.footer {
+    margin-top: 50px;
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links a {
+    margin: 0 30px;
+}
+.links a i {
+    font-size: 3rem;
+}
