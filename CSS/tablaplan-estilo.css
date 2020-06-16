@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-family: "Roboto Slab", serif;
 }
 a {
     color: #ffffff;
@@ -30,7 +31,6 @@ ul {
     width: 75px;
     height: 70px;
 }
-/* Navbar Left */
 .nav-main ul {
     display: flex;
 } 
@@ -56,7 +56,6 @@ ul {
     width: 1360px;
     height: 720px;
 }
-
 .container-all{
     position: relative;
     margin:auto;
@@ -64,7 +63,6 @@ ul {
 	max-height:720px;
     overflow: hidden;
 }
-
 .slide{
     display: flex;
     transform: translate3d(0, 0, 0);
@@ -73,7 +71,6 @@ ul {
     animation-direction: normal;
     animation-iteration-count: infinite;
 }
-
 .item-slide{
     position: relative;
     display: flex;
@@ -82,7 +79,6 @@ ul {
     flex-grow: 0;
     max-width: 100%;
 }
-
 .pagination{
     position: absolute;
     bottom: 20px;
@@ -93,7 +89,6 @@ ul {
     justify-content: center;
     width: 100%;
 }
-
 .pagination-item{
     display: flex;
     flex-direction: column;
@@ -109,11 +104,9 @@ ul {
     text-align: center;
     transition: all 300ms;
 }
-
 .pagination-item:hover{
     transform: scale(2);
 }
-
 .pagination-item img{
     display: inline-block;
     max-width: none;
@@ -122,50 +115,38 @@ ul {
     opacity: 0;
     transition: all 500ms;
 }
-
 .pagination-item:hover img{
     opacity: 1;
     transform: scale(1);
 }
-
-
 input[id="1"]:checked ~ .slide{
     animation: none;
     transform: translate3d(0, 0, 0);
 }
-
 input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
     background: #fff;
 }
-
 input[id="2"]:checked ~ .slide{
     animation: none;
     transform: translate3d(calc(-100% * 1), 0, 0);
 }
-
 input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
     background: #fff;
 }
-
-
 input[id="3"]:checked ~ .slide{
     animation: none;
     transform: translate3d(calc(-100% * 2), 0, 0);
 }
-
 input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
     background: #fff;
 }
-
 input[id="4"]:checked ~ .slide{
     animation: none;
     transform: translate3d(calc(-100% * 3), 0, 0);
 }
-
 input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     background: #fff;
 }
-
 @keyframes autoplay{
     10%{
         transform: translate3d(calc(-100% * 0), 0, 0);
@@ -183,9 +164,9 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         transform: translate3d(calc(-100% * 3), 0, 0);
     }
 }
-
-
 /* SLIDER FINAL */
+
+
 
 /* CARDS INICIO*/
 h2{
@@ -252,9 +233,10 @@ p{
 }
 /* CARDS FIN*/
 
-/* FOOTER INICIO */
+
+/* FOOTER FOLLOW INICIO */
 .footer {
-    margin-top: 50px;
+    
     background: black;
     color: white;
     font-size: 12px;
@@ -274,6 +256,29 @@ p{
 .links a i {
     font-size: 3rem;
 }
+/* FOOTER FOLLOW FIN*/
 
 
-
+/* FOOTER LINKS INICIO*/
+.footer-links {
+    background: #2f3640;
+    color: white;
+    font-size: 12px;
+    margin-top: 50px;
+    padding: 35px 0;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+}
+.footer-container ul {
+    margin: auto;
+}
+.footer-links li {
+    line-height: 2.8;
+}
+/* FOOTER LINKS FIN*/
