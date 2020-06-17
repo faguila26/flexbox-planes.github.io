@@ -195,28 +195,33 @@ p{
     /* hace que los elementos usen el width:25%(ancho) disponible*/
     flex-wrap: wrap;
 }
-
 .columna{
-    background: rgb(5, 115, 158);
+    background: rgb(60, 136, 183);
     color: rgb(255, 255, 255);
     border: 1px solid #333;
     margin: 0 auto;
     padding: 10px;
-    border-radius: 7px;
+    border-radius: 18px;
     /* añade un efecto de sombra alrededor del marco*/
     box-shadow: 10px 10px 5px rgb(92, 91, 91);
     width: 20%;
     /* hace que se tome en cuenta el valor que se especifique de borde o de relleno para el ancho o alto*/
     box-sizing: border-box;
+    transition: 0.5s ease;
+    cursor: pointer;
+   
 }
-
+.columna:hover {
+    transform: scale(1.10);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
 .btn-contrato{
-    background: rgb(179, 7, 113);
+    background: rgb(221, 7, 139);
     display: block;
     padding: 10px;
     color: white;
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 /* Estilo qe oscurece el botón cuando pasas el mouse sobre él*/
@@ -232,6 +237,45 @@ p{
     }
 }
 /* CARDS FIN*/
+
+
+
+/* CARD 2 */
+
+
+
+
+
+
+/* BOTON BANNER UNO */
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    margin-top: 510px;
+    margin-left: 100px;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* CARDS BANNER ONE */
+.cards-banner-uno {
+    width: 100%;
+    height: 575px;
+    background: url("../img/banner1.jpg")no-repeat center center/cover;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+
 
 
 /* FOOTER FOLLOW INICIO */
