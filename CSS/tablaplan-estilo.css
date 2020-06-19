@@ -3,21 +3,30 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     font-size: 16px;
     font-family: "Roboto Slab", serif;
 }
 a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
 }
 
 ul {
     list-style: none;
 }
+.contrato {
+    background: #3a397e;
+    height: 100px;
 
-/* Navigation Incio */
+}
+.contrato h2 {
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 1.3px black;
+}
+
+/* Navigation Incio
 .nav-main {
     background: black;
     font-size: 17px;
@@ -46,19 +55,22 @@ ul {
 .nav-main ul.nav-menu {
     flex: 1;
     margin-left: 20px;
-}
+}*/
 /* Navigation Final */
+
+
+
 
 
 /* SLIDER INICIO */
 .container-all img{
     display: block;
-    width: 1360px;
+    width: 100%;
     height: 720px;
 }
 .container-all{
     position: relative;
-    margin:auto;
+    margin: auto;
     max-width:1360px;
 	max-height:720px;
     overflow: hidden;
@@ -167,35 +179,36 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 /* SLIDER FINAL */
 
 
-
 /* CARDS INICIO*/
-h2{
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 20px;
+.columna h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    -webkit-text-stroke: 1.3px black;
 }
-p{
-    font-weight: 300;
+.columna h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    
 }
 .container{
     margin: 0 auto;
     width: 90%;
 }
 /* alinea el texto hacía el centro*/
-.text-center{
+.text-center {
     text-align: center;
 }
-.precio{
-    font-size: 35px;
-    color: rgb(0, 0, 0);
-}
+
+
 /* Ubica en una sola fila y toma solo el espacio necesario para desplegar su contenido*/
-.flex{
+.flex {
     display: flex;
     /* hace que los elementos usen el width:25%(ancho) disponible*/
     flex-wrap: wrap;
 }
-.columna{
+.columna {
     background: rgb(60, 136, 183);
     color: rgb(255, 255, 255);
     border: 1px solid #333;
@@ -209,74 +222,88 @@ p{
     box-sizing: border-box;
     transition: 0.5s ease;
     cursor: pointer;
-   
+    margin-top: 50px;
 }
+
+.columna img {
+    max-width: 60px;
+    max-height: 50px;
+}
+
 .columna:hover {
     transform: scale(1.10);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-  }
+}
 .btn-contrato{
-    background: rgb(221, 7, 139);
+    background: #000000;
+    color: #fff;
     display: block;
     padding: 10px;
-    color: white;
     text-decoration: none;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 /* Estilo qe oscurece el botón cuando pasas el mouse sobre él*/
 .btn-contrato:hover{
-    background: rgb(119, 2, 74);
-}
-/* media query que modifica la página en función del tipo de dispositivo, estilo responsivo*/
-@media (max-width: 932px){
-    /* en este caso antes de los 932px el porcentaje del ancho de las columnas tendrán un 100% */
-    .columna{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-/* CARDS FIN*/
-
-
-
-/* CARD 2 */
-
-
-
-
-
-
-/* BOTON BANNER UNO */
-.btn {
-    cursor: pointer;
-    display: inline-block;
-    border: 0;
-    font-weight: bold;
-    padding: 10px 20px;
     background: #262626;
-    color: #fff;
-    font-size: 15px;
-    border: 1px solid #fff;
-    margin-top: 510px;
-    margin-left: 100px;
-}
-.btn:hover {
-    opacity: 0.9;
 }
 
-/* CARDS BANNER ONE */
+/* CARDS BANNER UNO */
 .cards-banner-uno {
+    display:inline-block;
+    position:relative;
+    width: 100%;
+}
+.cards-banner-uno img{
+    width: 100%;
+    height: 470px;
+}
+/* BOTON BANNER UNO */
+.btn-banner1 {
+    cursor: pointer;
+    background: #000000;
+    padding: 10px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    position: relative;
+    top: -100px;
+    left: 450px;
+}
+.btn-banner1:hover {
+    background: #646464;
+}
+/* CARDS BANNER UNO FIN */
+
+/* CARDS BANNER DOS */
+.cards-banner-dos {
+    display:inline-block;
+    position:relative;
+    width: 100%;
+    margin-top: 50px;
+}
+.cards-banner-dos img {
     width: 100%;
     height: 575px;
-    background: url("../img/banner1.jpg")no-repeat center center/cover;
-    margin-bottom: 40px;
-    margin-top: 40px;
 }
-
-
-
-
+/* BOTON BANNER UNO */
+.btn-banner2 {
+    cursor: pointer;
+    background: #000000;
+    padding: 10px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-left: 100px;
+    position: relative;
+    top: -70px;
+    left: 10px;
+    text-transform:uppercase;
+}
+.btn-banner2:hover {
+    background: #646464;
+}
+/* CARDS BANNER DOS FIN */
 
 /* FOOTER FOLLOW INICIO */
 .footer {
@@ -326,3 +353,54 @@ p{
     line-height: 2.8;
 }
 /* FOOTER LINKS FIN*/
+
+
+/* media query que modifica la página en función del tipo de dispositivo, estilo responsivo*/
+@media (max-width: 932px){
+
+    /* en este caso antes de los 932px el porcentaje del ancho de las columnas tendrán un 100% */
+    .columna{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .container-all img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .contrato {
+        width: 100%;
+    }
+    .cards-banner-uno {
+        width: 100%;
+        
+    }
+    .cards-banner-uno img{
+        width: 100%;
+        height: 200px;
+    }
+    .btn-banner1 {
+        margin-left: 100px;
+        position: relative;
+        top: -70px;
+        left: 10px;
+        text-transform:uppercase;
+    }
+    .cards-banner-dos img{
+        width: 100%;
+        height: 400px;
+    }
+    .btn-banner2 {
+        margin-left: 100px;
+        position: relative;
+        top: -10px;
+        left: 10px;
+    }
+
+    .footer-container{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+}
+/* CARDS FIN*/
