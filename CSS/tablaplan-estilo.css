@@ -15,50 +15,50 @@ a {
 ul {
     list-style: none;
 }
-.contrato {
-    background: #3a397e;
-    height: 100px;
 
+.contrato-uno {
+    background: rgb(60, 136, 183);
+    height: 100px;
 }
-.contrato h2 {
+.contrato-uno h2 {
     text-align: center;
     color: white;
     -webkit-text-stroke: 1.3px black;
 }
 
-/* Navigation Incio
-.nav-main {
-    background: black;
-    font-size: 17px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding: 20px 0;
+.contrato-dos h1 {
+    text-align: center;
+    color: #000;
 }
-.nav-img {
-    width: 75px;
-    height: 70px;
+
+/* Navigation Incio*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}  
+ul.topnav li {
+    float: left;
 }
-.nav-main ul {
-    display: flex;
-} 
-.nav-main ul li {
-    padding: 10px;
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}  
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
 }
-.nav-main ul li a {
-    padding: 2px;
+ul.topnav li a.active {
+    background-color: rgb(60, 136, 183);
 }
-.nav-main ul li a:hover {
-    border-bottom: 2px solid white;
+ul.topnav li.right {
+    float: right;
 }
-.nav-main ul.nav-menu {
-    flex: 1;
-    margin-left: 20px;
-}*/
 /* Navigation Final */
-
-
 
 
 
@@ -250,13 +250,14 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 
 /* CARDS BANNER UNO */
 .cards-banner-uno {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     width: 100%;
+    height: 100%;
 }
 .cards-banner-uno img{
     width: 100%;
-    height: 470px;
+    height: 100%;
 }
 /* BOTON BANNER UNO */
 .btn-banner1 {
@@ -266,9 +267,10 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     color: #fff;
     border: 2px solid #fff;
     border-radius: 10px;
+    margin-left: 100px;
     position: relative;
-    top: -100px;
-    left: 450px;
+    top: -70px;
+    left: 10px;
 }
 .btn-banner1:hover {
     background: #646464;
@@ -277,14 +279,14 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 
 /* CARDS BANNER DOS */
 .cards-banner-dos {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     width: 100%;
     margin-top: 50px;
 }
 .cards-banner-dos img {
     width: 100%;
-    height: 575px;
+    height: 100%;
 }
 /* BOTON BANNER UNO */
 .btn-banner2 {
@@ -357,8 +359,10 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 
 /* media query que modifica la página en función del tipo de dispositivo, estilo responsivo*/
 @media (max-width: 932px){
-
-    /* en este caso antes de los 932px el porcentaje del ancho de las columnas tendrán un 100% */
+    ul.topnav li.right, 
+    ul.topnav li {
+        float: none;
+    }
     .columna{
         width: 70%;
         margin-bottom: 20px;
@@ -371,9 +375,11 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     .contrato {
         width: 100%;
     }
+    .contrato-dos h1 {
+        text-align: center;
+    }
     .cards-banner-uno {
         width: 100%;
-        
     }
     .cards-banner-uno img{
         width: 100%;
@@ -384,23 +390,24 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         position: relative;
         top: -70px;
         left: 10px;
-        text-transform:uppercase;
+        font-size: 15px;
     }
     .cards-banner-dos img{
         width: 100%;
-        height: 400px;
+        height: 300px;
     }
     .btn-banner2 {
         margin-left: 100px;
         position: relative;
         top: -10px;
         left: 10px;
+        font-size: 15px;
     }
 
     .footer-container{
         margin-left: 20px;
         margin-top: 20px;
     }
-
+    
 }
 /* CARDS FIN*/
